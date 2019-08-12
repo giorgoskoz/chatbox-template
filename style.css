@@ -166,7 +166,7 @@
 
 .message-list-search-btn {
     width: 34px;
-    height: 37px;
+    height: 36px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     background-color: lightgray;
@@ -176,6 +176,7 @@
 }
 
 .message-list-searchbar {
+    height: 36px;
     border: none;
     background-color: lightgray;
     font-size: 120%;
@@ -192,7 +193,7 @@
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     width: 34px;
-    height: 37px;
+    height: 36px;
     background-color: lightgray;
 }
 
@@ -282,7 +283,7 @@
         height: 90px;
         grid-template: 45px 45px / repeat(10, 1fr);
         grid-template-areas: 
-            "logo srch srch srch srch srch usr  usr  usr  usr"
+            "logo srch srch srch srch usr usr  usr  usr  usr"
             "hom  hom  crt  crt  frds frds grps grps ntf  hlp";
     }
 
