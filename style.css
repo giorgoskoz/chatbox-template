@@ -77,12 +77,17 @@
 
 .user-pic {
     border-radius: 50%;
+    justify-self: end;
 }
 
 .username {
     padding-top: 2px;
-    padding-left: 4px;
+    padding-left: 8px;
     font-size: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-self: start;
 }
 
 .home, .create, .friends, .groups, .notifications, .help {
