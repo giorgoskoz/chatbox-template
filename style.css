@@ -53,16 +53,18 @@
 .main-searchbar {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    /* font-size: 120%; */
 }
 
 .main-search-btn {
     background-color: lightgray;
     color: gray;
-    font-size: 150%;
-    text-align: center;
-    padding-top: 4px;
+    font-size: 140%;
+    padding-top: 3px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    align-content: center;
+    justify-content: center;
 }
 
 .user-profile-container {
@@ -78,7 +80,7 @@
 }
 
 .username {
-    padding-top: 3px;
+    padding-top: 2px;
     padding-left: 4px;
     font-size: 120%;
 }
@@ -103,13 +105,13 @@
 /* MESSAGES LIST WINDDOW */
 
 .message-list-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template: 60px 52px auto / 100%;
 }
 
 .message-list-container > * {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .message-list-header {
@@ -153,12 +155,12 @@
 .message-list-search {
     padding: 4px 16px 12px;
     display: grid;
-    grid-template: 100% / 1fr 7fr 1fr;
+    grid-template: 100% / 1.2fr 7fr 1fr;
 }
 
 .message-list-search-btn {
     width: 34px;
-    height: 35px;
+    height: 36px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     background-color: lightgray;
@@ -170,6 +172,7 @@
 .message-list-searchbar {
     border: none;
     background-color: lightgray;
+    font-size: 120%;
 }
 
 .fa-search {
@@ -183,10 +186,73 @@
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     width: 34px;
-    height: 35px;
+    height: 36px;
     background-color: lightgray;
 }
 
+.message-list-main {
+    display: grid;
+    align-content: start;
+    overflow: auto;
+    grid-gap: 4px;
+}
+
+.message-list-item {
+    padding: 0 8px;
+    height: 64px;
+    display: grid;
+    grid-template: 100% / 50px calc(100% - 108px) 42px 16px;
+}
+
+.selected {
+    border-radius: 9px;
+    background-color: lightgray;
+}
+
+.message-list-sender-pic {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.message-list-item-main {
+    display: grid;
+    grid-template: 50% 50% / 100%; 
+}
+
+.message-list-sender-name {
+    font-size: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-self: end;
+}
+
+.message-list-last-message {
+    font-size: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message-list-item-time {
+    font-size: 70%;
+}
+
+.message-list-item-read {
+    display: grid;
+}
+
+.message-list-sender-pic-small {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.message-list-sender-pic, .message-list-item-main, .message-list-item-time, .message-list-sender-pic-small {
+    align-self: center;
+}
 
 /* CHAT WINDOW */
 
@@ -199,6 +265,7 @@
 .chat-containter > * {
     border: 1px solid green;
 }
+
 
 
 
