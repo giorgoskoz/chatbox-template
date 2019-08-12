@@ -32,7 +32,7 @@
 }
 
 .chat-window-container {
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
 .site-header-item {
@@ -77,6 +77,12 @@
     border-radius: 50%;
 }
 
+.username {
+    padding-top: 3px;
+    padding-left: 4px;
+    font-size: 120%;
+}
+
 .home, .create, .friends, .groups, .notifications, .help {
     font-size: 150%
 }
@@ -106,7 +112,80 @@
     border: 1px solid green;
 }
 
+.message-list-header {
+    padding: 10px 16px;
+    display: grid;
+    grid-template: 100% / 40px calc(100% - 110px) 35px 35px;
+    justify-content: center;
+    align-content: center;
+}
 
+.message-list-user-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.message-list-title {
+    font-size: 200%;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.message-list-new-message-icon-container, .message-list-settings-icon-container {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+.fa-comment-medical, .fa-cog {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    font-size: 160%
+}
+
+.message-list-search {
+    padding: 4px 16px 12px;
+    display: grid;
+    grid-template: 100% / 1fr 7fr 1fr;
+}
+
+.message-list-search-btn {
+    width: 34px;
+    height: 35px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: lightgray;
+    display: grid;
+    justify-content: center;
+    justify-self: end;
+}
+
+.message-list-searchbar {
+    border: none;
+    background-color: lightgray;
+}
+
+.fa-search {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    
+}
+
+.message-list-searchbar-finale {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 34px;
+    height: 35px;
+    background-color: lightgray;
+}
 
 
 /* CHAT WINDOW */
