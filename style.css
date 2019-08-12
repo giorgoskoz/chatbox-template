@@ -10,12 +10,13 @@
     height: 10vh;
 }
 
+/* SITE HEADER */
 .site-header-container {
     width: 100%;
     background-color: navy;
     height: 55px;
     display: grid;
-    grid: 45px / 1fr 8fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    grid: 45px / 1fr 8fr 3fr 2fr 2fr 1fr 1fr 1fr 1fr;
     align-content: center;
 }
 
@@ -69,6 +70,7 @@
     grid: 32px / 1fr 2fr;
     align-content: center;
     justify-content: center;
+    margin-left: 35px;
 }
 
 .user-pic {
@@ -83,6 +85,45 @@
     color: gray;
 }
 
+/* MAIN WINDOW */
+
+.chat-window-container {
+    width: 100%;
+    height: calc(100vh - 55px);
+    display: grid;
+    grid-template: 100% / 1fr 2fr;
+}
+
+/* MESSAGES LIST WINDDOW */
+
+.message-list-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template: 60px 52px auto / 100%;
+}
+
+.message-list-container > * {
+    border: 1px solid green;
+}
+
+
+
+
+/* CHAT WINDOW */
+
+.chat-containter {
+    border: 1px solid red;
+    display: grid;
+    grid-template: 60px auto 52px / 100%;
+}
+
+.chat-containter > * {
+    border: 1px solid green;
+}
+
+
+
+/* RESPONSIVE */
 @media(max-width: 768px){
     .site-header-container {
         height: 90px;
@@ -101,6 +142,7 @@
     }
 
     .user-profile-container {
+        margin-left: 15px;
         grid-area: usr;
     }
 
