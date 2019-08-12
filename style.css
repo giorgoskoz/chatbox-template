@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+.outer-container {
+    width: 100%;
+    height: 10vh;
+}
+
+.site-header-container {
+    width: 100%;
+    background-color: navy;
+    height: 55px;
+    display: grid;
+    grid: 45px / 1fr 8fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+}
+
+.site-header-container > * {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.fa-comments {
+    color: white;
+    font-size: 190%
+}
+
+.chat-window-container {
+    background-color: lightgray;
+}
+
+.site-header-item {
+    display: grid;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.main-searchbar-container {
+    display: grid;
+    grid: 32px / 85% 15%;
+}
+
+.main-searchbar-container > * {
+    display: grid;
+}
+
+.main-searchbar {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.main-search-btn {
+    background-color: lightgray;
+    color: gray;
+    font-size: 150%;
+    text-align: center;
+    padding-top: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.user-profile-container {
+    display: grid;
+    grid: 32px / 1fr 2fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.user-pic {
+    border-radius: 50%;
+}
+
+.home, .create, .friends, .groups, .notifications, .help {
+    font-size: 150%
+}
+
+.friends, .groups, .notifications, .help {
+    color: gray;
+}
+
+@media(max-width: 768px){
+    .site-header-container {
+        height: 90px;
+        grid-template: 45px 45px / repeat(10, 1fr);
+        grid-template-areas: 
+            "logo srch srch srch srch srch usr  usr  usr  usr"
+            "hom  hom  crt  crt  frds frds grps grps ntf  hlp";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .main-searchbar-container {
+        grid-area: srch;
+    }
+
+    .user-profile-container {
+        grid-area: usr;
+    }
+
+    .home {
+        grid-area: hom;
+    }
+
+    .create {
+        grid-area: crt;
+    }
+
+    .friends {
+        grid-area: frds;
+    }
+
+    .groups {
+        grid-area: grps;
+    }
+
+    .notifications {
+        grid-area: ntf;
+    }
+
+    .help {
+        grid-area: hlp;
+    }
+
+}
