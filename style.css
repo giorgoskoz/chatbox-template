@@ -209,7 +209,7 @@
     align-content: start;
     overflow: auto;
     overflow-x: hidden;
-    grid-gap: 4px;
+    grid-gap: 6px;
 }
 
 .message-list-item {
@@ -441,6 +441,14 @@
         grid-template: 90px / 90px;
         justify-content: center;
         align-content: center;
+    }
+
+    .chat-compose {
+        grid-template: 52px / repeat(2, 44px) auto 44px;
+    }
+
+    .gif-container, .sticker-container {
+        display: none;
     }
 
 
