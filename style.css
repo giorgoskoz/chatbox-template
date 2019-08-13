@@ -13,7 +13,7 @@
 /* SITE HEADER */
 .site-header-container {
     width: 100%;
-    background-color: navy;
+    background-color: rgb(66,103,178);
     height: 55px;
     display: grid;
     grid: 45px / 1fr 8fr 4fr 2fr 2fr 1fr 1fr 1fr 1fr;
@@ -95,7 +95,7 @@
 }
 
 .friends, .groups, .notifications, .help {
-    color: gray;
+    color: rgb(20,37,69);
 }
 
 /* MAIN WINDOW */
@@ -289,6 +289,7 @@
 @media(max-width: 768px){
     .site-header-container {
         height: 90px;
+        width: 100%;
         grid-template: 45px 45px / repeat(10, 1fr);
         grid-template-areas: 
             "logo srch srch srch srch usr usr  usr  usr  usr"
@@ -338,7 +339,7 @@
     
     .chat-window-container {
         /* border: 2px solid orange; */
-        height: calc(100vh - 110px);
+        height: calc(100vh - 90px);
         grid-template: 100% / 90px calc(100vw - 90px);
     }
 
