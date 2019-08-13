@@ -317,6 +317,38 @@
 
 .chat-body {
     display: grid;
+    align-content: end;
+    grid-gap: 15px;
+    overflow: scroll;
+    /* overflow-x: hidden; */
+}
+
+.incoming-message-container {
+    align-self: end;
+    justify-self: start;
+    display: grid;
+    max-width: 60%;
+    grid-template: auto / 35px auto repeat(3, 27px);
+    grid-gap: 5px;
+}
+
+.incoming-message-sender-pic-container {
+    display: grid;
+    align-content: end;
+    justify-self: end;
+}
+
+.incoming-message-sender-pic {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.incoming-message {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 8px;
 }
 
 .outgoing-message-container {
@@ -324,6 +356,7 @@
     justify-self: end;
     display: grid;
     max-width: 60%;
+    height: auto;
     grid-template: auto / repeat(3, 27px) auto 20px;
     grid-gap: 5px;
 }
