@@ -16,7 +16,7 @@
     background-color: rgb(66,103,178);
     height: 55px;
     display: grid;
-    grid: 45px / 1fr 8fr 4fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    grid: 45px / 1fr 7fr 5fr 2fr 2fr 1fr 1fr 1fr 1fr;
     align-content: center;
 }
 
@@ -245,7 +245,7 @@
 
 .message-list-last-message {
     font-weight: 300;
-    font-size: 80%;
+    font-size: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -280,6 +280,39 @@
 
 .chat-header {
     border-bottom: 1px solid lightgray;
+    display: grid;
+    grid-template: 100% / 60px auto repeat(3, 60px);
+}
+
+.sender-container {
+    display: grid;
+    align-content: center;
+}
+
+.chat-sender-pic-container, .sender-call, .sender-video-call, .sender-info {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.sender-call, .sender-video-call, .sender-info {
+    font-size: 150%;
+    color: rgb(11,153,255);
+}
+
+.chat-sender-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sender-name {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.sender-active-status {
+    font-size: 70%;
 }
 
 .chat-body {
