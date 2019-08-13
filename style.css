@@ -316,7 +316,43 @@
 }
 
 .chat-body {
+    display: grid;
+}
 
+.outgoing-message-container {
+    align-self: end;
+    justify-self: end;
+    display: grid;
+    max-width: 60%;
+    grid-template: auto / repeat(3, 27px) auto 20px;
+    grid-gap: 5px;
+}
+
+.message-more-container, .message-reply-container, .message-reaction-container {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 110%;
+    background-color: lightgray;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.outgoing-message {
+    margin-left: 8px;
+    color: white;
+    background-color: rgb(11,153,255);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.outgoing-message-status {
+    display: grid;
+    align-content: end;
+    color: rgb(11,153,255);
 }
 
 .chat-compose {
