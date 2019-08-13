@@ -105,6 +105,7 @@
     height: calc(100vh - 55px);
     display: grid;
     grid-template: 100% / 1fr 2fr;
+    /* background-color: lightgray; */
 }
 
 /* MESSAGES LIST WINDDOW */
@@ -149,6 +150,12 @@
     display: grid;
     align-self: center;
     justify-self: center;
+}
+
+.message-list-new-message, .message-list-settings {
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
 .fa-comment-medical, .fa-cog {
@@ -201,6 +208,7 @@
     display: grid;
     align-content: start;
     overflow: auto;
+    overflow-x: hidden;
     grid-gap: 4px;
 }
 
@@ -264,13 +272,13 @@
 
 /* CHAT WINDOW */
 
-.chat-containter {
-    border: 1px solid red;
+.chat-container {
+    /* border: 1px solid red; */
     display: grid;
-    grid-template: 60px auto 52px / 100%;
+    grid-template: 60px auto 52px / auto;
 }
 
-.chat-containter > * {
+.chat-container > * {
     border: 1px solid green;
 }
 
@@ -323,5 +331,30 @@
     .help {
         grid-area: hlp;
     }
+
+    .message-list-user-pic, .message-list-title, .message-list-settings, .message-list-search, .message-list-sender-name, .message-list-last-message, .message-list-item-time, .message-list-item-read {
+        display: none;
+    }
+    
+    .chat-window-container {
+        /* border: 2px solid orange; */
+        height: calc(100vh - 110px);
+        grid-template: 100% / 90px calc(100vw - 90px);
+    }
+
+    .message-list-container {
+        grid-template: 90px auto / 90px;
+    }
+
+    .message-list-header {
+        grid-template: 60px / 60px;
+    }
+
+    .message-list-item {
+        grid-template: 90px / 90px;
+        justify-content: center;
+        align-content: center;
+    }
+
 
 }
