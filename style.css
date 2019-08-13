@@ -273,17 +273,70 @@
 /* CHAT WINDOW */
 
 .chat-container {
-    /* border: 1px solid red; */
+    border-left: 1px solid lightgray;
     display: grid;
     grid-template: 60px auto 52px / auto;
 }
 
-.chat-container > * {
-    border: 1px solid green;
+.chat-header {
+    border-bottom: 1px solid lightgray;
 }
 
+.chat-body {
 
+}
 
+.chat-compose {
+    display: grid;
+    grid-template: 52px / repeat(4, 44px) auto 44px;
+    align-content: center;
+    justify-content: stretch;
+}
+
+.more-container, .gif-container, .sticker-container, .file-container, .send-container {
+    color: rgb(11,153,255);
+    font-size: 150%;
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.input-container {
+    display: grid;
+    align-content: center;
+    justify-content: stretch;
+    grid-template: 85% / 44px auto 44px;
+}
+
+.input-finale, .input-main {
+    display: grid;
+    align-content: center;
+    justify-content: stretch;
+}
+
+.input-intro {
+    height: 44px;
+    width: 44px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: lightgray;
+}
+
+.input-field {
+    background-color: lightgray;
+    height: 44px;
+    border: none;
+}
+
+.input-finale {
+    color: rgb(11,153,255);
+    font-size: 150%;
+    height: 44px;
+    width: 44px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: lightgray;
+}
 
 /* RESPONSIVE */
 @media(max-width: 768px){
