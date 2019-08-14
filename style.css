@@ -488,7 +488,7 @@
         grid-template: 100% / 60px auto;
     }
     
-    .sender-call, .sender-video-call, .sender-info, .file-container, .input-intro, .input-finale {
+    .sender-call, .sender-video-call, .sender-info, .more-container, .file-container, .fa-plus-circle, .fa-folder, .fa-sticky-note, .fa-image {
         display: none;
     }
 
@@ -503,7 +503,7 @@
     do. tried setting 44px auto 44px value to the 768 query and it worked correctly on this size */
     .chat-compose {
         display: grid;
-        grid-template: 52px / 44px auto 44px;
+        grid-template: 52px / auto 44px;
         border: 5px solid green;
     }
 
