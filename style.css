@@ -581,7 +581,15 @@
         grid-template: 60px / 60px;
     }
 
+    .message-list-sender-pic {
+        align-self: center;
+        justify-self: center;
+    }
+
     .message-list-item {
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
         grid-template: 90px / 90px;
         justify-content: center;
         align-content: center;
