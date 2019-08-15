@@ -187,6 +187,7 @@
     border: none;
     background-color: lightgray;
     font-size: 120%;
+    min-width: 100px;
 }
 
 .fa-search {
