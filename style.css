@@ -54,6 +54,7 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     font-size: 120%;
+    min-width: 100px;
 }
 
 .main-search-btn {
@@ -81,8 +82,9 @@
 }
 
 .username {
-    padding-top: 6px;
+    padding-top: 5px;
     padding-left: 8px;
+    font-weight: 700;
     font-size: 120%;
     white-space: nowrap;
     overflow: hidden;
@@ -91,7 +93,8 @@
 }
 
 .home, .create, .friends, .groups, .notifications, .help {
-    font-size: 150%
+    font-size: 120%;
+    font-weight: 700;
 }
 
 .friends, .groups, .notifications, .help {
@@ -158,11 +161,11 @@
     justify-content: center;
 }
 
-.fa-comment-medical, .fa-cog {
+.fa-edit, .fa-cog {
     display: grid;
     align-self: center;
     justify-self: center;
-    font-size: 160%
+    font-size: 130%
 }
 
 .message-list-search {
@@ -232,6 +235,7 @@
 }
 
 .message-list-item-main {
+    padding-left: 10px;
     display: grid;
     grid-template: 60% 40% / 100%; 
 }
@@ -485,35 +489,47 @@
 
 @media(max-width: 425px) {
 
+    .chat-container {
+        /* display: grid; */
+    }
+
     .chat-header {
         grid-template: 100% / 60px auto;
     }
     
-    .sender-call, .sender-video-call, .sender-info, .more-container, .file-container, .fa-plus-circle, .fa-folder, .fa-sticky-note, .fa-image {
+    .sender-call, .sender-video-call, .sender-info, .more-container, .file-container, .gif-container, .sticker-container, .fa-plus-circle, .fa-folder, .fa-sticky-note, .fa-image {
         display: none;
     }
-
-    .input-container {
-        width: 160px;
-        overflow: hidden;
-        /* justi */
+    
+    .input-field {
+        min-width: 40px;
     }
-
+    
     /* ISSUE BELOW
     grid-template doesnt seem to override the 768 media query, although the rest of the properties
     do. tried setting 44px auto 44px value to the 768 query and it worked correctly on this size */
     .chat-compose {
-        display: grid;
-        grid-template: 52px / auto 44px;
+        /* display: grid; */
+        grid-template: 52px / calc(100% - 44px) 44px;
+        /* grid-template-areas: "fsearch flike"; */
         border: 5px solid green;
     }
 
-    .input-container {
-        grid-template: 85% / auto;
-    }
-    
     .chat-compose > * {
         border: 5px solid red;
+    }
+
+    .input-container {
+        /* min-width: 160px; */
+        /* grid-area: fsearch; */
+        overflow: hidden;
+        display: grid;
+        grid-template: 85% / auto;
+    }
+
+    .send-container {
+        /* grid-area: flike; */
+        display: grid;
     }
 }
 
