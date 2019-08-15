@@ -530,6 +530,8 @@
         grid-area: logo;
     }
 
+    /* ISSUE BELOW
+    issue only in web firefox: searchbar extends more than it should, overlaps with username */
     .main-searchbar-container {
         grid-area: srch;
     }
