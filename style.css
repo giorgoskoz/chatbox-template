@@ -440,6 +440,10 @@
     justify-content: stretch;
 }
 
+.input-main {
+    position: relative;
+}
+
 .input-finale {
     justify-content: center;
 }
@@ -457,6 +461,9 @@
     height: 44px;
     border: none;
     min-width: 0;
+    position: absolute;
+    left: -22px;
+    width: calc(100% + 22px);
 }
 
 .input-finale {
