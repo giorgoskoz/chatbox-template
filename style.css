@@ -616,5 +616,9 @@
         display: grid;
         grid-template: 52px / auto 44px;
     }
+
+    .input-container {
+        margin-left: 4px;
+    }
     
 }
